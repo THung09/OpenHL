@@ -638,13 +638,3 @@ Mã nguồn OpenHL: **giấy phép phi thương mại** (xem `LICENSE`) — tự
 The interface is English by default. Type `/lang vi` in the app (or run `openhl lang vi`) to switch to Vietnamese, and `/lang en` to switch back. The choice is saved in `config.json` (`ui.lang`); the `OPENHL_LANG` environment variable overrides it.
 
 Giao diện mặc định là tiếng Anh. Gõ `/lang vi` trong ứng dụng (hoặc `openhl lang vi`) để chuyển sang tiếng Việt, `/lang en` để quay lại.
-
-## Chuẩn bị trước khi đưa lên GitHub
-
-Trước khi `git push` lên repo public, kiểm tra:
-
-- [ ] File `.gitignore` đã có trong repo (đi kèm trong bản này) — loại `config.json`, `.runtime/`, `.sessions/`, `vendor/*/auth`, `vendor/*/session`, `node_modules/`, log, `.env`. Đây là nơi lưu token/cookie đăng nhập thật của bạn — **không commit các thư mục/tệp này**.
-- [ ] Chạy `git status` trước khi `git add .` để chắc chắn không có `config.json` hay thư mục `vendor/*/auth|session` nào lọt vào.
-- [ ] File `LICENSE` đã có watermark/tên tác giả bạn muốn giữ (xem phần "Giấy phép" ở trên).
-- [ ] Không có email, token hoặc API key thật nào còn sót trong `config.example.json` hoặc trong các file test.
-- [ ] `package.json` giữ `"private": true` để tránh bị `npm publish` nhầm lên npm registry.
