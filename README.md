@@ -1,34 +1,5 @@
-# OpenHL
 
-## OpenHL 2.12.5 — OpenCode-style TUI workspace
-
-Xem `CHANGELOG-2.12.5.md`.
-
-## OpenHL 2.12.1 — Nhân vật AI, animation trạng thái và sửa hỏi–đáp
-
-Xem `CHANGELOG-2.12.1.md`.
-
-
-## OpenHL 2.11.2 — Tự vá driver ChatGPT (ô nhập, nút gửi)
-
-Xem `CHANGELOG-2.11.2.md`.
-
-## OpenHL 2.11.1 — Sửa lỗi cài ChatGPT (cài từ GitHub thay vì PyPI)
-
-Xem `CHANGELOG-2.11.1.md`.
-
-## OpenHL 2.11.0 — Thanh tab gọn, mở lại đúng tab, chuột bật mặc định
-
-Xem `CHANGELOG-2.11.0.md`.
-
-## OpenHL 2.10.5 — Chat UI refresh
-
-- Viết lại timeline hội thoại theo cấu trúc vai trò rõ ràng: **Bạn** và **OpenHL**, có gutter riêng, giữ giao diện gọn kiểu TUI hiện đại.
-- Chuẩn hoá khoảng trắng hiển thị ngoài code: gộp chuỗi space/tab thừa, bỏ khoảng trắng cuối dòng và giới hạn dòng trống; nội dung trong fenced/indented code được giữ nguyên.
-- Markdown table dùng độ rộng cột theo nội dung và terminal, không còn đệm khoảng trắng dài trước dấu phân cách.
-- Khối code của câu trả lời assistant tiếp tục có nút `⧉ copy` riêng; văn bản thông thường không có nút sao chép giả.
-
-**OpenHL** là một AI agent chạy trong terminal (PowerShell / Windows Terminal), giao diện lấy cảm hứng từ OpenCode. Nó tích hợp các backend web AI vào một chỗ, có thể trò chuyện, đọc/ghi tệp, chạy lệnh, tạo skill — nhưng mọi thao tác nguy hiểm đều đi qua **Guardian**.
+**OpenHL (Beta)** là một AI agent chạy trong terminal (PowerShell / Windows Terminal), giao diện lấy cảm hứng từ OpenCode. Nó tích hợp các backend web AI vào một chỗ, có thể trò chuyện, đọc/ghi tệp, chạy lệnh, tạo skill — nhưng mọi thao tác nguy hiểm đều đi qua **Guardian**.
 
 Phiên bản: **2.12.5**
 
