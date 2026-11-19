@@ -1,0 +1,29 @@
+# --- Dữ liệu cá nhân / bí mật: KHÔNG commit ---
+config.json
+.runtime/
+.sessions/
+vendor/*/auth/
+vendor/*/auth
+vendor/*/session/
+vendor/*/session
+vendor/*/runtime/
+*.log
+.env
+.env.*
+
+# --- Thư mục vendor được OpenHL tự tải khi cài đặt, không phải mã nguồn OpenHL ---
+vendor/
+
+# --- Node ---
+node_modules/
+npm-debug.log*
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Build/tạm ---
+*.tmp
+*.bak

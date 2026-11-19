@@ -1,0 +1,83 @@
+{
+  "version": 2,
+  "brand": "OpenHL",
+  "ui": {
+    "lang": "en"
+  },
+  "gateway": {
+    "port": 8787,
+    "apiKey": "openhl-local"
+  },
+  "chat": {
+    "provider": "gemini",
+    "model": "",
+    "thinking": true,
+    "search": true,
+    "temperature": null,
+    "systemPrompt": ""
+  },
+  "agent": {
+    "enabled": true,
+    "maxSteps": 40,
+    "allowSession": false,
+    "activeSkills": []
+  },
+  "providers": {
+    "gemini": {
+      "kind": "gemini-web2api",
+      "enabled": true,
+      "dir": "vendor/gemini",
+      "exe": "gemini-web2api.exe",
+      "port": 8007,
+      "apiKey": "openhl-local",
+      "extraArgs": [],
+      "env": {}
+    },
+    "aistudio": {
+      "kind": "aistudio2api",
+      "enabled": true,
+      "dir": "vendor/aistudio",
+      "exe": "aistudio2api.exe",
+      "port": 2048,
+      "apiKey": "openhl-local",
+      "extraArgs": ["-open-ui=false"],
+      "browser": "camoufox",
+      "env": {}
+    },
+    "qwen": {
+      "kind": "qwen2api-node",
+      "enabled": true,
+      "dir": "vendor/qwen",
+      "exe": "index.js",
+      "port": 7860,
+      "apiKey": "openhl-local",
+      "extraArgs": [],
+      "env": {}
+    },
+    "deepseek": {
+      "kind": "deepseek-api",
+      "enabled": true,
+      "dir": "vendor/deepseek",
+      "exe": "python",
+      "port": 8000,
+      "apiKey": "unused",
+      "extraArgs": [],
+      "env": {}
+    },
+    "chatgpt": {
+      "kind": "chatgpt-web2api",
+      "title": "ChatGPT",
+      "enabled": false,
+      "dir": "vendor/chatgpt",
+      "exe": "python",
+      "port": 8080,
+      "cdpPort": 9222,
+      "apiKey": "openhl-local",
+      "model": "auto",
+      "startTimeoutMs": 600000,
+      "extraArgs": [],
+      "env": {}
+    }
+  }
+}
+

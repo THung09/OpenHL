@@ -1,0 +1,19 @@
+{
+  "name": "openhl",
+  "version": "2.12.5",
+  "description": "OpenHL — trợ lý AI chạy trong terminal, tích hợp Gemini, Google AI Studio, Qwen, DeepSeek và ChatGPT như các backend tùy chọn.",
+  "bin": {
+    "openhl": "bin/openhl.js"
+  },
+  "main": "bin/openhl.js",
+  "scripts": {
+    "test": "node --test",
+    "start": "node bin/openhl.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Contact me via Discord: doki_doki_fuwa.fuwa",
+  "private": true
+}
